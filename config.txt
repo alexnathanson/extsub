@@ -30,6 +30,6 @@ subtitle_duration = 1
 
 # IM NOT A READER
 # If you want to play a video without any subtitles, without changing the code
-# This avoids any interruption from the serial connection and button.
-# default is 0 to run with subtitles, serial, etc. Set it to 1 to run as a normal media player without text.
+# This avoids any errors from the serial connection or button.
+# default is 0 to run as intended with subtitles, serial, etc. Set it to 1 to run as a standard media player without text.
 justvid = 0
