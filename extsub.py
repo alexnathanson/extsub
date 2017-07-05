@@ -45,7 +45,7 @@ f = open(abs_path + '.count_plays', 'w')
 f.write("0")
 f.close()
 
-if justvid = 0:
+if (justvid == 0):
 	#set up serial connection to Arduino
 	ports = list(serial.tools.list_ports.comports())
 	for p in ports:
@@ -145,7 +145,7 @@ while done==0:
 			print "ERROR"
 			raise SystemExit
 
-if justvid = 0:
+if (justvid == 0):
 	
 	#import SRT subtitle files into one "subtitles" dict
 	subtitles = collections.OrderedDict()
