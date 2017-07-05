@@ -27,3 +27,9 @@ launch_state = Press Button for Captions
 # display before returning to default state?
 # options: 1: to the end, 2: once around, 3: once around to the end
 subtitle_duration = 1
+
+# IM NOT A READER
+# If you want to play a video without any subtitles, without switching out the PI
+# This avoids any interruption from the serial connection.
+# default is 0 to run with the button, Arduino via serial, and text. Set it to 1 to run as a normal media player without text.
+justvid = 0
