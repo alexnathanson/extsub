@@ -33,3 +33,10 @@ subtitle_duration = 1
 # This avoids any errors from the serial connection or button.
 # default is 0 to run as intended with subtitles, serial, etc. Set it to 1 to run as a standard media player without text.
 justvid = 0
+
+#MOVE IT
+# Change the position of the video window
+winposX1 = 0
+winposY1 = 0
+winposX2 = 1920
+winposY2 = 1080
