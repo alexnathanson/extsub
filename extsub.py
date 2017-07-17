@@ -33,7 +33,10 @@ launch_state = config.get('extsub config', 'launch_state')
 video = abs_path + config.get('extsub config', 'video_filename')
 subtitle_directory = abs_path + config.get('extsub config', 'subtitle_directory')
 justvid = config.get('extsub config', 'justvid')
-	
+winposX1 = config.get('extsub config', 'winposX1')
+winposY1 = config.get('extsub config', 'winposY1')
+winposX2 = config.get('extsub config', 'winposX2')
+winposY2 = config.get('extsub config', 'winposY2')
 	
 #initiate assorted variables for tracking subtitle duration
 subtitle_duration = config.get('extsub config', 'subtitle_duration')
@@ -123,7 +126,7 @@ if (justvid == 0):
 	GPIO.add_event_detect(21, GPIO.FALLING, callback=next_language, bouncetime=200)
 
 #start omxplayer
-cmd = "omxplayer -o local --no-osd --loop %s" %(video)
+cmd = "omxplayer -o local --win winposX1,winposY1,winposX2,winposY2 --no-osd --loop %s" %(video)
 Popen([cmd], shell=True)
 
 #start dbus
